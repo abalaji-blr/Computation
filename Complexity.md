@@ -6,11 +6,23 @@
 
 Complexity is a field of study about resources (time and memory) used by the algorithm.
 
+
+
 ## Polynomial / Exponential Time
 
 The complexity class of all problems that can be solved in **polynomial** time on a **deterministic** RAM.
 
 In the case of **deterministic RAM**, the algorithm can take **polynomial** (P) or **exponential**  (EXPTIME) time to find a solution.
+
+
+
+### Comparison of runtimes
+
+![](https://thecodingbay.com/wp-content/uploads/2022/04/Complexities-Graph1.png)
+
+
+
+---
 
 
 
@@ -46,11 +58,13 @@ This is a complexity class of all problems that can be solved in **polynomial** 
 
 In general, **NP** problems are **hard** problems. For the NP problems, **finding a solution** is harder but can **verify** easily (ie., in **polynomial time**). 
 
-For example: Sudoku
+For example - Sudoku
 
 ### How to solve an NP problem in a Deterministic RAM machine?
 
-You can **simulate the NP ** (Non-deterministic) problem in a deterministic RAM machine with the worst **exponential** time by walking through different choices of transition. The reason is that we have to explore all possible paths one by one and accept the solution. So, to simulate a non-deterministic problem in a deterministic RAM machine, we need a lot of memory and time resources.
+You can **simulate the NP ** (Non-deterministic) problem in a deterministic RAM machine with the worst **exponential** time by walking through different choices of transition. 
+
+The reason is that we have to explore all possible paths one by one and accept the solution. So, to simulate a non-deterministic problem in a deterministic RAM machine, we need a lot of memory and time resources.
 
 ---
 
@@ -64,7 +78,7 @@ You can **simulate the NP ** (Non-deterministic) problem in a deterministic RAM 
 
 - **P != NP**
 
-  All scientists believe P != NP, because for all NP problems, we can **verify** in polynomial time and to solve it takes **exponential** time (as it has to explore all possible paths / combinations).
+  All scientists believe P != NP because, for all NP problems, we can **verify** in polynomial time, and solving it takes **exponential** time (as it has to explore all possible paths/combinations).
 
 
 
@@ -102,7 +116,9 @@ In conclusion, **NP-Complete** problems are **hard** to solve, **easy** to verif
 
 
 
+## Important Complexity Classes
 
+![](https://discretegames.github.io/assets/complexities/complexity_classes.png)
 
 ## How to Solve Hard Problems?
 
@@ -110,9 +126,9 @@ We may not be able to find the **optimal** solution. But the objective is to fin
 
 Typically, the hard problems take **exponential** time (for ex: $$2^n$$, n being input size), which is not acceptable. By different techniques, if we can change  the *base* of the exponent for the run time, may yield better results (for ex: $$1.7^n$$).
 
-For the **harder** problems, the size of input (*n*) is not the only the problem. The structure of the *input* (*k*) matters as well. 
+For the **harder** problems, the size of the input (*n*) is not the only problem; the structure of the input (k) also matters. 
 
-Following are some of approaches to solving NP-Complete or NP-Hard problems.
+Following are some of the approaches to solving NP-Complete or NP-Hard problems.
 
 - With Performace Guarantee
 
@@ -120,11 +136,11 @@ Following are some of approaches to solving NP-Complete or NP-Hard problems.
 
      Avoid the exhaustive search space by optimizing the tree. 
 
-     The **pre-processing** here is to trim the input (aka clean the input space), that would result in reduced search space. Also, note that the *pre-processing* should be in *polynomial* time and that should not affect the *solution*.
+     The **pre-processing** here is to trim the input (aka clean the input space), which would result in **reduced search space**. Also, note that the *pre-processing* should be in *polynomial* time and that should not affect the *solution*.
 
   2. **Approximation Algorithms**
 
-     They provide a mathematical proof certfying the quality of the returned solution in worst case.
+     They provide mathematical proof certifying the quality of the returned solution in the worst case.
 
      The objective is to find the **near-optimal** solution.
 
@@ -134,7 +150,7 @@ Following are some of approaches to solving NP-Complete or NP-Hard problems.
 
   3. **Randomized Algorithms**
 
-     Uses **random** number in the algorithm. It employs some degree of *randomness* as part of its logic or procedure. It usually uses *pseudo random number generator*, which is a **deterministic** 
+     Uses a **random** number in the algorithm. It employs some degree of *randomness* as part of its logic or procedure. It usually uses a *pseudo-random number generator*, which is a **deterministic**.
 
       * Las Vegas algorithm
 
@@ -144,7 +160,7 @@ Following are some of approaches to solving NP-Complete or NP-Hard problems.
 
 - No Performace Guarantees.
 
-  - Heuristics Algorithm : They resonably find good solution on some inputs but provide no clear indication at the outset why they succeed or fail.
+  - Heuristics Algorithm: They reasonably find a good solution on some inputs but provide no clear indication at the outset of why they succeed or fail.
     - Genetic Algorithm
     - Simulated Annealing
     - Local Search
