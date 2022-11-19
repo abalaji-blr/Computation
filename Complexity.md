@@ -86,11 +86,11 @@ The reason is that we have to explore all possible paths one by one and accept t
 
 ## NP-Hard Problems
 
-They are a class of problems, which are **hard** to solve - ie., finding a solution is harder.
+They are a class of problems, **"as hard as" every other problem in NP**.
 
 So, the question is - how to quantify a problem hard?
 
-Here comes a notion called **reduction**. If you can take a known NP-hard problem and reduce them to some NP problem in polynomial time (**reduction has to be in polynomial time**), then you quantify that NP problem as **NP-hard**. 
+Here comes a notion called **reduction**. If you can take a known NP-hard problem and reduce them to some **NP problem in polynomial time** (**reduction has to be in polynomial time**), then you quantify that problem as **NP-hard**. 
 
 That is, you have established some kind of **relationship between the problems**. If either one is solved, the solution can be obtained for the other.
 
@@ -98,7 +98,7 @@ In conclusion, **NP-Hard** problems are **hard** to solve. Even if you solve it,
 
 ## NP-Complete Problems
 
-They are a class of problems, where you take a problem **from NP-hard and find the solution in NP time**.
+They are a class of problems, where that is in **NP-hard and in NP**.
 
 **So, NP-Complete is at the intersection of NP-Hard and NP**.
 
@@ -169,3 +169,7 @@ Following are some of the approaches to solving NP-Complete or NP-Hard problems.
 ## Resources
 
 * [Blog: P - NP - NP-Complete - NP-Hard](https://www.baeldung.com/cs/p-np-np-complete-np-hard)
+* [MIT Open Courseware - Algorithm Lower Bounds, Course # 6.890](https://ocw.mit.edu/courses/6-890-algorithmic-lower-bounds-fun-with-hardness-proofs-fall-2014/video_galleries/lecture-videos/)
+* Book: Computers and Intractability, Michael Garey and David Johnson
+* Book: Games, Puzzles and Computation, Robert Hearn and Erik Demaine
+
