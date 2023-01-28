@@ -170,6 +170,7 @@ Following are some of the approaches to solving NP-Complete or NP-Hard problems.
 
 * [Blog: P - NP - NP-Complete - NP-Hard](https://www.baeldung.com/cs/p-np-np-complete-np-hard)
 * [MIT Open Courseware - Algorithm Lower Bounds, Course # 6.890](https://ocw.mit.edu/courses/6-890-algorithmic-lower-bounds-fun-with-hardness-proofs-fall-2014/video_galleries/lecture-videos/)
+* [Udacity Course - Theoretical Computer Science cs313](https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313)
 * Book: Computers and Intractability, Michael Garey and David Johnson
 * Book: Games, Puzzles and Computation, Robert Hearn and Erik Demaine
 
